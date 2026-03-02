@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haber Portalı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 id="logo">Günün Haberleri</h1>
+            <nav>
+                <a href="#" class="active" data-cat="top">Ana Sayfa</a>
+                <a href="#" data-cat="technology">Teknoloji</a>
+                <a href="#" data-cat="business">Ekonomi</a>
+                <a href="#" data-cat="sports">Spor</a>
+            </nav>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Haber ara...">
+                <button id="searchBtn">Ara</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="kategoriler" id="kategoriler">
+            <button class="aktif" data-cat="top">Tümü</button>
+            <button data-cat="technology">Teknoloji</button>
+            <button data-cat="business">Ekonomi</button>
+            <button data-cat="science">Bilim</button>
+            <button data-cat="sports">Spor</button>
+        </div>
+
+        <h2 id="pageTitle">Son Haberler</h2>
+
+        <div id="newsList" class="haber-listesi">
+            <!-- Haberler buraya dolacak -->
+            <p>Yükleniyor...</p>
+        </div>
+
+        <div class="daha-fazla">
+            <button id="loadMoreBtn">Daha Fazla Göster</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Haber Portalı | NewsData.io ile hazırlandı.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
